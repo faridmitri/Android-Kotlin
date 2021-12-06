@@ -1,4 +1,4 @@
-package com.fm.apireadgithub
+package com.fm.apireadgithub.Network
 
 import java.text.SimpleDateFormat
 import java.util.*
