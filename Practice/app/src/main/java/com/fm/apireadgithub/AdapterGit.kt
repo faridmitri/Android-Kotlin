@@ -1,61 +1,70 @@
 package com.fm.apireadgithub
 
+import android.text.TextUtils
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
-import android.view.animation.Transformation
-import androidx.lifecycle.Transformations
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
 import coil.transform.CircleCropTransformation
+import com.fm.apireadgithub.model.Items
 import com.fm.apireadgithub.databinding.ItemBinding
+import kotlinx.android.synthetic.main.item.view.*
 
-class AdapterGit(private var gitList:ArrayList<Items>): RecyclerView.Adapter<AdapterGit.ViewHolderGit>() {
 
-    fun setData(list: ArrayList<Items>){
-        this.gitList.addAll(list)
+class AdapterGit: RecyclerView.Adapter<AdapterGit.MyViewHolder>() {
+
+    var items = ArrayList<Items>()
+
+    fun setListData(data: ArrayList<Items>) {
+        this.items = data
     }
 
-// create an inner class with name ViewHolder
-    // It takes a view argument, in which pass the generated class of single_item.xml
-    // ie SingleItemBinding and in the RecyclerView.ViewHolder(binding.root) pass it like this
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AdapterGit.MyViewHolder {
+        val inflater = LayoutInflater.from(parent.context).inflate(R.layout.item, parent, false)
 
-    class ViewHolderGit(val binding:ItemBinding):RecyclerView.ViewHolder(binding.root)
-
-    // inside the onCreateViewHolder inflate the view of SingleItemBinding
-    // and return new ViewHolder object containing this layout
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderGit {
-        val binding = ItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-
-        return ViewHolderGit(binding)
+        return MyViewHolder(inflater)
     }
 
-    // bind the items with each item
-    // of the list languageList
-    // which than will be
-    // shown in recycler view
-    // to keep it simple we are
-    // not setting any image data to view
+    override fun getItemCount() = items.size
 
-    override fun onBindViewHolder(holder: ViewHolderGit, position: Int) {
-        with(holder) {
-            with(gitList[position]) {
-                binding.avatarName.text = this.owner.login
-                binding.description.text = this.description
-                binding.repoName.text = this.name
-                binding.numStars.text = this.stargazers_count.toString()
-                val url:String = this.owner.avatar_url
-                binding.avatarImg.load(url){
-                    placeholder(R.drawable.ic_img)
-                    crossfade(true)
-                    transformations(CircleCropTransformation())
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+        holder.bind(items[position])
+    }
 
-                }
+    class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
 
+        val avatarImg = view.avatarImg
+        val reponame = view.repoName
+        val avatarName = view.avatarName
+        val numStars = view.numStars
+        val description = view.description
+
+        fun bind(data: Items) {
+            reponame.text = data.name
+            avatarName.text = data.owner.login
+            numStars.text = data.stargazers_count.toString()
+            if(!TextUtils.isEmpty(data.description)) {
+                description.text = data.description
+            } else {
+                description.text = "No Desc available."
             }
-        }
-    }
 
-    override fun getItemCount(): Int = gitList.size
+            val url = data.owner.avatar_url
+
+            avatarImg.load(url){
+                placeholder(R.drawable.ic_img)
+                crossfade(true)
+                transformations(CircleCropTransformation())
+            }
+
+        }
+
+    }
 
 
 }
+
+
+
+

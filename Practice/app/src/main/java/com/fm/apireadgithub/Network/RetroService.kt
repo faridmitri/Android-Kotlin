@@ -1,17 +1,16 @@
 package com.fm.apireadgithub.Network
 
-import com.fm.apireadgithub.ModelGit
+import com.fm.apireadgithub.model.ModelGit
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface InterfaceApi {
+interface RetroService {
+
     @GET("repositories")
     fun getApiResult(
         @Query("q") q: String?,
         @Query("sort") sort:String?,
         @Query("order") order:String?,
-        @Query("page") page:Int?,
-
-    ): Call<ModelGit>
+        ): Call<ModelGit>
 }

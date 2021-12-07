@@ -3,15 +3,18 @@ package com.fm.apireadgithub.Network
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInstance {
+class RetroInstance {
 
     companion object{
-        fun getRetrofitInstance():Retrofit{
-            var address = URLApi()
-            return Retrofit.Builder().
-                baseUrl(address.baseURL)
+        private const val Base_Url = "https://api.github.com/search/"
+
+        fun getRetroInstance(): Retrofit {
+
+            return Retrofit.Builder()
+                .baseUrl(Base_Url)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
         }
     }
+
 }
