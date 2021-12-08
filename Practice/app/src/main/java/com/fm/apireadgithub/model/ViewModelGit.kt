@@ -1,43 +1,48 @@
 package com.fm.apireadgithub.model
 
+
+
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.fm.apireadgithub.Network.RetroInstance
 import com.fm.apireadgithub.Network.RetroService
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import java.text.SimpleDateFormat
+import java.util.*
+
 
 class ViewModelGit: ViewModel(){
 
-    lateinit var recyclerListData: MutableLiveData<ModelGit>
+    private var recyclerListData: MutableLiveData<ModelGit> = MutableLiveData()
 
-
-    init {
-        recyclerListData = MutableLiveData()
-    }
 
     fun getRecyclerListDataObserver(): MutableLiveData<ModelGit> {
         return recyclerListData
     }
 
-    fun makeAPICall(q:String,sort:String,order:String) {
+    fun makeAPICall() {
+        val time:String=getPast30Days()
+        viewModelScope.launch (Dispatchers.IO) {
+            val retroInstance = RetroInstance.getRetroInstance().create(RetroService::class.java)
+            val response =  retroInstance.getApiResult(time)
+            recyclerListData.postValue(response)
 
-        val retroInstance = RetroInstance.getRetroInstance().create(RetroService::class.java)
-        val call = retroInstance.getApiResult(q,sort,order)
-        call.enqueue(object : Callback<ModelGit> {
-            override fun onFailure(call: Call<ModelGit>, t: Throwable) {
-                recyclerListData.postValue(null)
-            }
 
-            override fun onResponse(call: Call<ModelGit>, response: Response<ModelGit>) {
-                if(response.isSuccessful){
-                    recyclerListData.postValue(response.body())
-                } else {
-                    recyclerListData.postValue(null)
-                }
-            }
-        })
+        }
+
+    }
+
+
+    //function to get the last 30 days
+    private fun getPast30Days():String{
+        var past30days=""
+        val calendar= Calendar.getInstance()
+        calendar.add(Calendar.DAY_OF_YEAR,-30)
+        val formatter= SimpleDateFormat("yyyy-MM-dd")
+        past30days=formatter.format(calendar.time)
+        return "created>$past30days"
     }
 
 }
