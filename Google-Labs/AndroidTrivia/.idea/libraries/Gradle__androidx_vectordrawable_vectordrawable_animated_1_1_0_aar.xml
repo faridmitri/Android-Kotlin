@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.vectordrawable:vectordrawable-animated:1.1.0@aar">
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/820e17008c4790e2a1169fa6ccd2da84/vectordrawable-animated-1.1.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/7f228e871e042c954025c8b6178c8cbc/vectordrawable-animated-1.1.0/jars/classes.jar!/" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/7f228e871e042c954025c8b6178c8cbc/vectordrawable-animated-1.1.0/AndroidManifest.xml" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/7f228e871e042c954025c8b6178c8cbc/vectordrawable-animated-1.1.0/res" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/d3e8fc6ed63b326b234841fd8559c851/vectordrawable-animated-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/d3e8fc6ed63b326b234841fd8559c851/vectordrawable-animated-1.1.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/d3e8fc6ed63b326b234841fd8559c851/vectordrawable-animated-1.1.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

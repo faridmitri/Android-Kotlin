@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: com.google.android.material:material:1.5.0-alpha02@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/a7fbedad7ef4b040847cce278ad39414/material-1.5.0-alpha02/annotations.zip!/" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/52998f0b05d8d5e79a42ca249043b339/material-1.5.0-alpha02/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/a7fbedad7ef4b040847cce278ad39414/material-1.5.0-alpha02/jars/classes.jar!/" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/a7fbedad7ef4b040847cce278ad39414/material-1.5.0-alpha02/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/a7fbedad7ef4b040847cce278ad39414/material-1.5.0-alpha02/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/52998f0b05d8d5e79a42ca249043b339/material-1.5.0-alpha02/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/52998f0b05d8d5e79a42ca249043b339/material-1.5.0-alpha02/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/52998f0b05d8d5e79a42ca249043b339/material-1.5.0-alpha02/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

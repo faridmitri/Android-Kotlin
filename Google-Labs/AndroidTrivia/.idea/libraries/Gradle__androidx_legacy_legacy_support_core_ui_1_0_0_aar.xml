@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.legacy:legacy-support-core-ui:1.0.0@aar">
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/e383c09985150f83c0522118eba0042d/legacy-support-core-ui-1.0.0/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/41d45165d2d2f2b4934b0bb50371b687/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/41d45165d2d2f2b4934b0bb50371b687/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/41d45165d2d2f2b4934b0bb50371b687/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/83b38994a3c6d3fba2dc85787f1a62cb/legacy-support-core-ui-1.0.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/83b38994a3c6d3fba2dc85787f1a62cb/legacy-support-core-ui-1.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/83b38994a3c6d3fba2dc85787f1a62cb/legacy-support-core-ui-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

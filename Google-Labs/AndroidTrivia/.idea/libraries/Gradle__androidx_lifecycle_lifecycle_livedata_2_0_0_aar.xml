@@ -3,8 +3,9 @@
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/a779d724f2c48e462f73e356f8933292/lifecycle-livedata-2.0.0/res" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/0512495ecbd44feeac9b4d35d3884573/lifecycle-livedata-2.0.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/0512495ecbd44feeac9b4d35d3884573/lifecycle-livedata-2.0.0/jars/classes.jar!/" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/0512495ecbd44feeac9b4d35d3884573/lifecycle-livedata-2.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/6d41c20ceac6293c44b90454991e8ee5/lifecycle-livedata-2.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/6d41c20ceac6293c44b90454991e8ee5/lifecycle-livedata-2.0.0/res" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/6d41c20ceac6293c44b90454991e8ee5/lifecycle-livedata-2.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

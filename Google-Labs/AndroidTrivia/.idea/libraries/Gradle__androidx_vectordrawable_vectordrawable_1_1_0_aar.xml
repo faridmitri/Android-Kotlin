@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.vectordrawable:vectordrawable:1.1.0@aar">
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/10287d9b4738833a47c9d04e721bfe59/vectordrawable-1.1.0/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/61595d8ddcea485cbd0200611fea9cf2/vectordrawable-1.1.0/AndroidManifest.xml" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/61595d8ddcea485cbd0200611fea9cf2/vectordrawable-1.1.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/61595d8ddcea485cbd0200611fea9cf2/vectordrawable-1.1.0/jars/classes.jar!/" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/22aa685771fd635f1c822c11c08df961/vectordrawable-1.1.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/22aa685771fd635f1c822c11c08df961/vectordrawable-1.1.0/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/22aa685771fd635f1c822c11c08df961/vectordrawable-1.1.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

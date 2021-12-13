@@ -1,12 +1,12 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.fragment:fragment:1.2.4@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f2f2002756495bb9a497a42eccb963d4/fragment-1.2.4/annotations.zip!/" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/da46157bb2893124763afb028677493f/fragment-1.2.4/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f2f2002756495bb9a497a42eccb963d4/fragment-1.2.4/jars/classes.jar!/" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f2f2002756495bb9a497a42eccb963d4/fragment-1.2.4/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f2f2002756495bb9a497a42eccb963d4/fragment-1.2.4/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/da46157bb2893124763afb028677493f/fragment-1.2.4/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/da46157bb2893124763afb028677493f/fragment-1.2.4/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/da46157bb2893124763afb028677493f/fragment-1.2.4/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

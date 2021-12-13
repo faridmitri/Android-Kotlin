@@ -3,8 +3,9 @@
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/609c0950fce9dbe590edb6aff6259407/loader-1.0.0/res" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/8d4e69588042598f5b337e81cc18c2fb/loader-1.0.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/8d4e69588042598f5b337e81cc18c2fb/loader-1.0.0/jars/classes.jar!/" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/8d4e69588042598f5b337e81cc18c2fb/loader-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/8f6574880dbdcdfc0ed1cac9529e794c/loader-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/8f6574880dbdcdfc0ed1cac9529e794c/loader-1.0.0/res" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/8f6574880dbdcdfc0ed1cac9529e794c/loader-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -16,6 +16,7 @@
 
 package com.example.android.navigation
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -35,8 +36,26 @@ class GameOverFragment : Fragment() {
         // Add OnClick Handler for Try Again button
         binding.tryAgainButton.setOnClickListener{view: View->
             view.findNavController()
-                .navigate(R.id.action_gameOverFragment_to_gameFragment)}
+                .navigate(GameOverFragmentDirections.actionGameOverFragmentToGameFragment())}
+
+        setHasOptionsMenu(true)
 
         return binding.root
     }
+
+    // Creating our Share Intent
+    private fun getShareIntent() : Intent {
+        val args = GameWonFragmentArgs.fromBundle(requireArguments())
+        val shareIntent = Intent(Intent.ACTION_SEND)
+        shareIntent.setType("text/plain")
+            .putExtra(Intent.EXTRA_TEXT, getString(R.string.share_success_text, args.numCorrect, args.numQuestions))
+        return shareIntent
+    }
+
+    // Starting an Activity with our new Intent
+    private fun shareSuccess() {
+        startActivity(getShareIntent())
+    }
+
+
 }

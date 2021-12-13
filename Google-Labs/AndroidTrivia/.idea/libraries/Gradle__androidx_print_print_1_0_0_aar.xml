@@ -1,13 +1,14 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.print:print:1.0.0@aar">
     <ANNOTATIONS>
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/91018f9befa524fab4d568da02b77565/print-1.0.0/annotations.zip!/" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/e80d19031ee67cde30070c0694443851/print-1.0.0/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/4a191dfb8598d0a6448d202a63f1b89a/print-1.0.0/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/91018f9befa524fab4d568da02b77565/print-1.0.0/AndroidManifest.xml" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/91018f9befa524fab4d568da02b77565/print-1.0.0/jars/classes.jar!/" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/91018f9befa524fab4d568da02b77565/print-1.0.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/e80d19031ee67cde30070c0694443851/print-1.0.0/res" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/e80d19031ee67cde30070c0694443851/print-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/e80d19031ee67cde30070c0694443851/print-1.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

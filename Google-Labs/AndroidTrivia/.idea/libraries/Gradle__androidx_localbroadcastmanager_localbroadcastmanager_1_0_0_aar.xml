@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.localbroadcastmanager:localbroadcastmanager:1.0.0@aar">
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/7d2ce40abcfcc38197c18a6e1a7a9896/localbroadcastmanager-1.0.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/39b469ae7e29cba784255dd9ad560a8e/localbroadcastmanager-1.0.0/jars/classes.jar!/" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/39b469ae7e29cba784255dd9ad560a8e/localbroadcastmanager-1.0.0/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/39b469ae7e29cba784255dd9ad560a8e/localbroadcastmanager-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/ba07510dc693ed69c6aa7ed2dba84bc2/localbroadcastmanager-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/ba07510dc693ed69c6aa7ed2dba84bc2/localbroadcastmanager-1.0.0/res" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/ba07510dc693ed69c6aa7ed2dba84bc2/localbroadcastmanager-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

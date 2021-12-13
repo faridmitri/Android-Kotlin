@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.legacy:legacy-support-core-utils:1.0.0@aar">
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/3510b8a1a2f39f88d60e6892ab5d773a/legacy-support-core-utils-1.0.0/res" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/40b00a1ae279225c2dbaaccfca37380d/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/40b00a1ae279225c2dbaaccfca37380d/legacy-support-core-utils-1.0.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/40b00a1ae279225c2dbaaccfca37380d/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/ac72c9f91e9f1640cd5f65b8dcedba21/legacy-support-core-utils-1.0.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/ac72c9f91e9f1640cd5f65b8dcedba21/legacy-support-core-utils-1.0.0/AndroidManifest.xml" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/ac72c9f91e9f1640cd5f65b8dcedba21/legacy-support-core-utils-1.0.0/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

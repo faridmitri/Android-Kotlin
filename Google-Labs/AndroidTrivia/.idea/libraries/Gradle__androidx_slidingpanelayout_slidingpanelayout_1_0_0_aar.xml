@@ -2,9 +2,10 @@
   <library name="Gradle: androidx.slidingpanelayout:slidingpanelayout:1.0.0@aar">
     <CLASSES>
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/3a202735294aba6e919b4028458bfe26/slidingpanelayout-1.0.0/res" />
-      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f16cddb80d7bfc68e155d2ea1961bb9e/slidingpanelayout-1.0.0/jars/classes.jar!/" />
-      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f16cddb80d7bfc68e155d2ea1961bb9e/slidingpanelayout-1.0.0/AndroidManifest.xml" />
       <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/f16cddb80d7bfc68e155d2ea1961bb9e/slidingpanelayout-1.0.0/res" />
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/4e92786630c4bcc6650a08f708ff27e8/slidingpanelayout-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/4e92786630c4bcc6650a08f708ff27e8/slidingpanelayout-1.0.0/AndroidManifest.xml" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-2/files-2.1/4e92786630c4bcc6650a08f708ff27e8/slidingpanelayout-1.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
