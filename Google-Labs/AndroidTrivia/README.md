@@ -7,3 +7,9 @@ screens. Each screen is implemented as a fragment.
 The app navigates using buttons, the app bar, and a navigation drawer. Because
 students haven't yet learned about saving data or the Android lifecycle, the app
 tries to eliminate bugs caused by configuration changes.
+
+<br/>
+
+- Create a fragment
+- Define navigation paths
+- Start an external activity
