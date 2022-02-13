@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class ToDoAdapter (var toDoList: MutableList<ToDo>):RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
+class ToDoAdapter (var toDoList: MutableList<ToDo>, val toDoInterface:ToDoInterface):RecyclerView.Adapter<ToDoAdapter.ToDoViewHolder>() {
 
     class ToDoViewHolder(itemView:View):RecyclerView.ViewHolder(itemView) {
 
@@ -25,11 +25,27 @@ class ToDoAdapter (var toDoList: MutableList<ToDo>):RecyclerView.Adapter<ToDoAda
     override fun onBindViewHolder(holder: ToDoViewHolder, position: Int) {
         val toDo = toDoList[position]
         holder.nameText.text = toDo.name
+        holder.edtimg.setOnClickListener{
+            toDoInterface.updateToDoText(toDoList[position])
+        }
+        holder.dltimg.setOnClickListener{
+            toDoInterface.onDeleteToDo(toDo,position)
+        }
     }
 
     override fun getItemCount(): Int {
         return toDoList.size
     }
 
+    fun setList(list:MutableList<ToDo>)
+    {
+        toDoList = list
+        notifyDataSetChanged()
+    }
 
+    fun deleteItem(todo:ToDo,position: Int) {
+        toDoList.remove(todo)
+        notifyDataSetChanged()
+
+    }
 }
