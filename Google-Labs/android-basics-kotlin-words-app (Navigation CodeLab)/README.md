@@ -15,5 +15,5 @@ The app demonstrates the use of Intents in two ways:
 * allowing Android to service the Intent using the apps and resources present on the device.
 
 # trained to do:
-*Fragments and the Navigation Component
-*Simplify in-app screen navigation with the Navigation component, a collection of libraries.
+* Fragments and the Navigation Component
+* Simplify in-app screen navigation with the Navigation component, a collection of libraries.
