@@ -7,6 +7,8 @@ Unscramble is  a single player game app that displays scrambled words. To play t
 to make a word using all the letters from the displayed scrambled word.
 
 
-Trained for Architecture components
+Android Jetpack Architecture
 --------------------------------------
-* ModelView 
+* ModelView
+* Live Data
+* Data Binding
