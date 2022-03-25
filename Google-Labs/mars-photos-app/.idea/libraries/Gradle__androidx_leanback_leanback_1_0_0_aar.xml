@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.leanback:leanback:1.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-3/7ebcc9f778e13ed0cb050b341ee39be0/transformed/leanback-1.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://D:/AndroidStudio/Gradle/caches/transforms-3/7ebcc9f778e13ed0cb050b341ee39be0/transformed/leanback-1.0.0/jars/classes.jar!/" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-3/7ebcc9f778e13ed0cb050b341ee39be0/transformed/leanback-1.0.0/res" />
+      <root url="file://D:/AndroidStudio/Gradle/caches/transforms-3/7ebcc9f778e13ed0cb050b341ee39be0/transformed/leanback-1.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://D:/AndroidStudio/Gradle/caches/modules-2/files-2.1/androidx.leanback/leanback/1.0.0/5188ccc4e7fe161924b310f6d275a7d7c21e6392/leanback-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
