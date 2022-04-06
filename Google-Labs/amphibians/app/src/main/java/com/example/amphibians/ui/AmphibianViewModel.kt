@@ -23,7 +23,7 @@ import com.example.amphibians.network.Amphibian
 import com.example.amphibians.network.AmphibianApi
 import kotlinx.coroutines.launch
 
-enum class AmphibianApiStatus {LOADING, ERROR, DONE}
+enum class AmphibianApiStatus { LOADING, ERROR, DONE }
 
 class AmphibianViewModel : ViewModel() {
 
@@ -33,7 +33,7 @@ class AmphibianViewModel : ViewModel() {
 
     // TODO: Create properties to represent MutableLiveData and LiveData for a list of amphibian objects
     private val _amphibianslist = MutableLiveData<List<Amphibian>>()
-    val amphibianslist : LiveData<List<Amphibian>> = _amphibianslist
+    val amphibianslist: LiveData<List<Amphibian>> = _amphibianslist
 
     // TODO: Create properties to represent MutableLiveData and LiveData for a single amphibian object.
     //  This will be used to display the details of an amphibian when a list item is clicked
@@ -42,13 +42,13 @@ class AmphibianViewModel : ViewModel() {
 
     // TODO: Create a function that gets a list of amphibians from the api service and sets the
     //  status via a Coroutine
-    fun getAmphibianList(){
+    fun getAmphibianList() {
         viewModelScope.launch {
             _status.value = AmphibianApiStatus.LOADING
             try {
                 _amphibianslist.value = AmphibianApi.retrofitService.getAmphibians()
                 _status.value = AmphibianApiStatus.DONE
-            } catch (e: Exception){
+            } catch (e: Exception) {
                 _status.value = AmphibianApiStatus.ERROR
                 _amphibianslist.value = listOf()
             }
