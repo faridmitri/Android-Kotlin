@@ -10,6 +10,9 @@ class BodyTrackerViewModel : ViewModel() {
     private val _birthdaydte = MutableLiveData<String?>()
        val birthdaydte:LiveData<String?>  = _birthdaydte
 
+    private val _gender = MutableLiveData<String?>()
+        val gender:LiveData<String?> = _gender
+
 
     fun selectUnit(unitSelected: String) {
           Log.i("item",unitSelected)
@@ -19,7 +22,12 @@ class BodyTrackerViewModel : ViewModel() {
 
         val selectedMonth = month + 1
         _birthdaydte.value = year.toString() + "-" + selectedMonth .toString() + "-" + day.toString()
-        Log.i("time", year.toString() + "-" + selectedMonth.toString() + "-" + day.toString())
+        //Log.i("time", year.toString() + "-" + selectedMonth.toString() + "-" + day.toString())
+    }
+
+    fun gender(gender:String?) {
+        _gender.value = gender
+        Log.i("Gender",gender.toString())
     }
 
 }

@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
+import android.widget.RadioButton
+import android.widget.RadioGroup
 import android.widget.Toast
 import androidx.core.text.set
 import androidx.databinding.DataBindingUtil
@@ -45,17 +47,11 @@ class ProfileFragment : Fragment() {
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
 
-
                 val selectedunit = binding?.spMeasuresUnit?.selectedItem.toString()
                 viewModel.selectUnit(selectedunit)
 
             }
         }
-
-        //binding.edtBirthDate.setText(viewModel.birthdaydte.toString())
-
-    //    viewModel.birthdaydte.observe(viewLifecycleOwner,{birthday -> binding.edtBirthDate.
-            //                                              setText(viewModel.birthdaydte.toString())})
 
 
     }

@@ -56,7 +56,8 @@
             android:id="@+id/edt_height"
             style="@style/edit_text"
             android:layout_width="200dp"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
 
     </com.google.android.material.textfield.TextInputLayout>
         <!--Spinner widget-->
@@ -71,9 +72,6 @@
         app:layout_constraintTop_toBottomOf="@+id/name"
         android:entries="@array/height_units"
         />
-
-
-
 
         <!-- height  -->
         <com.google.android.material.textfield.TextInputLayout
@@ -99,9 +97,46 @@
                 android:focusableInTouchMode="false"
                 android:onClick="showDatePickerDialog"
                 android:text="@{viewModel.birthdaydte}"
+
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Radio group-->
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGrp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/birthDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:layout_marginEnd="20dp"
+                style="@style/edit_text"
+                android:drawableLeft="@drawable/ic_gender"
+                android:drawablePadding="10dp"
+                />
+
+            <RadioButton android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/male"
+                android:onClick="@{()->viewModel.gender(@string/male)}"
+                />
+
+            <RadioButton android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/female"
+                android:onClick="@{()->viewModel.gender(@string/female)}"/>
+        </RadioGroup>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
