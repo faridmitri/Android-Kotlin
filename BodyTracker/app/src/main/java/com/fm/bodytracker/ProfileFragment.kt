@@ -8,11 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.Toast
+import androidx.core.text.set
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import com.fm.bodytracker.databinding.FragmentProfileBinding
 import com.fm.bodytracker.models.BodyTrackerViewModel
+import com.fm.bodytracker.models.DatePickerFragment
 
 // TODO: Rename parameter arguments, choose names that match
 
@@ -29,7 +31,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater,R.layout.fragment_profile,container,false)
-        binding.lifecycleOwner = this
+        binding.lifecycleOwner = viewLifecycleOwner
         binding.viewModel = viewModel
         return binding.root
     }
@@ -49,6 +51,12 @@ class ProfileFragment : Fragment() {
 
             }
         }
+
+        //binding.edtBirthDate.setText(viewModel.birthdaydte.toString())
+
+    //    viewModel.birthdaydte.observe(viewLifecycleOwner,{birthday -> binding.edtBirthDate.
+            //                                              setText(viewModel.birthdaydte.toString())})
+
 
     }
 

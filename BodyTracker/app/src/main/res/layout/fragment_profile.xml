@@ -72,6 +72,38 @@
         android:entries="@array/height_units"
         />
 
+
+
+
+        <!-- height  -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/birthDate"
+            style="@style/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/birthday"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/height"
+            app:startIconDrawable="@drawable/ic_age">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edt_birthDate"
+                style="@style/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:onClick="showDatePickerDialog"
+                android:text="@{viewModel.birthdaydte}"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>

@@ -11,7 +11,7 @@ data class info(
     @ColumnInfo(name = "userName") val name:String?,
     @ColumnInfo(name = "height") val height:Float?,
     @ColumnInfo(name = "heightUnit") val hUnit:String?,
-    @ColumnInfo(name = "DateOfBirth")  val DateOfBirth : DateFormat?,
+    @ColumnInfo(name = "DateOfBirth")  val DateOfBirth : String?,
     @ColumnInfo(name= "Gender") val Gender:String?
     
 )

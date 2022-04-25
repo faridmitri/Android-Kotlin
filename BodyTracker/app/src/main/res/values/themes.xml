@@ -17,7 +17,21 @@
     <style name="edit_text">
         <item name="startIconTint">@color/red</item>
         <item name="android:textAppearance">?attr/textAppearanceBody1</item>
-        <item name="android:textColor">@color/red</item>
+        <item name="android:textColor">@color/purple_700</item>
+    </style>
+
+    <style name="customDatePickerStyle" parent="ThemeOverlay.AppCompat.Dialog">
+        <item name="android:datePickerStyle">@style/customDatePicker</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textColorPrimary">@color/purple_700</item>
+        <item name="colorControlNormal">@color/teal_200</item>
+
+
+    </style>
+
+    <style name="customDatePicker" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
 
 
     </style>
