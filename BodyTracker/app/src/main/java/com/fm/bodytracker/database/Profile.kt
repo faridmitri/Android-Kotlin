@@ -6,8 +6,8 @@ import androidx.room.PrimaryKey
 import java.text.DateFormat
 
 @Entity (tableName = "profile")
-data class info(
-    @PrimaryKey val id: Int,
+data class Profile(
+    @PrimaryKey (autoGenerate = true) val id: Long = 0L,
     @ColumnInfo(name = "userName") val name:String?,
     @ColumnInfo(name = "height") val height:Float?,
     @ColumnInfo(name = "heightUnit") val hUnit:String?,
