@@ -1,19 +1,19 @@
 package com.fm.bodytracker.database
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.Query
-import androidx.room.Update
+import androidx.room.*
 
 @Dao
 interface ProfileDao {
 
     @Insert
-    fun insert (Profile: Profile)
+    suspend fun insert (Profile: Profile)
 
     @Update
-    fun update (Profile: Profile)
+    suspend  fun update (Profile: Profile)
 
-    @Query("SELECT * FROM profile ORDER BY id DESC LIMIT 1")
-    fun getTonight():  Profile?
+    @Query("SELECT * FROM profileTable ORDER BY id DESC LIMIT 1")
+    suspend fun getProfile():  Profile?
+
+    @Query("DELETE FROM profileTable")
+    suspend fun delete (Profile: Profile)
 }

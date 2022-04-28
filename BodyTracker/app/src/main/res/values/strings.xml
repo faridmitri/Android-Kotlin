@@ -9,6 +9,7 @@
     <string name="male">Male</string>
     <string name="female">Female</string>
     <string name="gender">Gender</string>
+    <string name="save">Save</string>
     <string-array name="height_units">
         <item>Centimeters</item>
         <item>Feet</item>
