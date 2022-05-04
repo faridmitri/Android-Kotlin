@@ -1,6 +1,7 @@
 package com.fm.bodytracker.models
 
 import android.util.Log
+import android.util.Log.INFO
 import androidx.lifecycle.*
 import com.fm.bodytracker.database.Profile
 import com.fm.bodytracker.database.ProfileDao
@@ -49,22 +50,26 @@ class BodyTrackerViewModel (private val profileDao: ProfileDao): ViewModel() {
     }
 
 
-    private fun getNewItemEntry(name: String, height: String, hUnit: String,dateOfBirth:String,gender:String): Profile {
+    private fun getNewItemEntry(id: Int, name: String, height: String, hUnit: String,dateOfBirth:String,gender:String): Profile {
         return Profile(
+            id = id,
             name = name,
-            height = height.toFloat(),
+            height = height,
             hUnit = hUnit,
             dateOfBirth = dateOfBirth,
             gender = gender
         )
     }
 
-    fun addNewItem(name: String, height: String, hUnit: String,dateOfBirth:String,gender:String) {
-        val newItem = getNewItemEntry(name, height, hUnit,dateOfBirth,gender)
+    fun addNewItem(id:Int, name: String, height: String, hUnit: String, dateOfBirth:String, gender:String) {
+        val newItem = getNewItemEntry(id,name, height, hUnit,dateOfBirth,gender)
         insertProfile(newItem)
+        Log.i("data",newItem.toString())
     }
 
-
+    fun retrieveItem(id: Int): LiveData<Profile> {
+        return profileDao.getProfile(id).asLiveData()
+    }
 
 }
 
@@ -78,9 +83,5 @@ class BodyTrackerViewModelFactory(private val profileDao:ProfileDao) : ViewModel
         throw IllegalArgumentException("Unknown ViewModel class")
     }
 
-    private fun insertItem(profile: Profile) {
-
-
-    }
 
 }
