@@ -73,7 +73,7 @@
         android:entries="@array/height_units"
         />
 
-        <!-- height  -->
+        <!-- Birthday  -->
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/birthDate"
             style="@style/edit_text"

@@ -6,10 +6,11 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [Profile::class], version = 1, exportSchema = false)
+@Database(entities = [Profile::class,Body::class], version = 1, exportSchema = false)
 abstract class  ProfileRoomDatabase :RoomDatabase(){
 
 abstract fun profileDao() : ProfileDao
+abstract fun bodyCompositionDao() : BodyCompositionDao
 
     companion object {
         @Volatile

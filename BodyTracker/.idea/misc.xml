@@ -4,8 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/drawable/ic_age.xml" value="0.2265" />
+        <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/drawable/ic_fatmass.xml" value="0.2265" />
+        <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/drawable/ic_height.xml" value="0.2265" />
+        <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/drawable/ic_muscle.xml" value="0.2265" />
         <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/drawable/ic_person.xml" value="0.2265" />
         <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/layout/fragment_add.xml" value="0.2269021739130435" />
         <entry key="..\:/Users/FARID/Documents/android-vision/visionSamples/Android-Kotlin/BodyTracker/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
       </map>
     </option>

@@ -10,10 +10,22 @@
     <string name="female">Female</string>
     <string name="gender">Gender</string>
     <string name="save">Save</string>
+    <string name="weight">Weight</string>
+    <string name="fatMass">Fat Mass</string>
+    <string name="ufat">Kg</string>
+    <string name="muscleMass">Muscle Mass</string>
+    <string name="tbw">Total Body Water</string>
+    <string name="boneMass">Bone Mass</string>
+    <string name="date">Date</string>
     <string-array name="height_units">
         <item>Centimeters</item>
         <item>Feet</item>
         <item>inches</item>
+    </string-array>
+
+    <string-array name="weight_units">
+        <item>Kg</item>
+        <item>pounds</item>
     </string-array>
 
 </resources>
