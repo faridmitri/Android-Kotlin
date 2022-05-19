@@ -10,7 +10,7 @@ import androidx.room.RoomDatabase
 abstract class  ProfileRoomDatabase :RoomDatabase(){
 
 abstract fun profileDao() : ProfileDao
-abstract fun bodyCompositionDao() : BodyCompositionDao
+
 
     companion object {
         @Volatile
